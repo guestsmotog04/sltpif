@@ -10,5 +10,5 @@ Just close the scrcpy window after you're finished. FFmpeg should start encoding
 # Credits
 [Genymobile](https://www.github.com/Genymobile) for scrcpy!  
 Fabrice Bellard for FFmpeg!  
-[Microsoft](https://www.github.com/Microsoft) for Windows!  
+[Microsoft](https://www.microsoft.com) for Windows!  
 Igor Pavlov for 7-Zip!
