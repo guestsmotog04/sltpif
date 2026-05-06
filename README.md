@@ -8,7 +8,7 @@ To set this up, just download the 7z file from the releases page (note you need 
 Just close the scrcpy window after you're finished. FFmpeg should start encoding.
 
 # Credits
-[Genymobile](https://www.github.com/Genymobile) for scrcpy!
-Fabrice Bellard for FFmpeg!
-[Microsoft](https://www.github.com/Microsoft) for Windows!
+[Genymobile](https://www.github.com/Genymobile) for scrcpy!  
+Fabrice Bellard for FFmpeg!  
+[Microsoft](https://www.github.com/Microsoft) for Windows!  
 Igor Pavlov for 7-Zip!
