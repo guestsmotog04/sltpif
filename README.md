@@ -6,8 +6,6 @@ Pronounciation of scrcpy: **scr**een **c**o**py**
 
 SLTPIF is designed for zero‑friction screen recording on Windows.
 
----
-
 ## Features (Current)
 
 - Automatic scrcpy recording  
@@ -19,8 +17,6 @@ SLTPIF is designed for zero‑friction screen recording on Windows.
 
 SLTPIF is intentionally lightweight and beginner‑friendly.
 
----
-
 ## Installation
 
 1. Go to the Releases page  
@@ -29,8 +25,6 @@ SLTPIF is intentionally lightweight and beginner‑friendly.
 4. Run `SLTPIF.bat` (or just `SLTPIF` if extensions are hidden)
 
 No configuration required.
-
----
 
 ## Usage
 
@@ -44,8 +38,6 @@ No configuration required.
    - move the finished video into `finished videos/`
 
 Your recording is ready instantly.
-
----
 
 ## Planned Features (Future)
 
@@ -73,8 +65,6 @@ Add timestamps, channel names, or custom naming patterns.
 ### Batch Mode  
 Process multiple recordings automatically.
 
----
-
 ## Requirements
 
 - Windows 10/11  
@@ -83,16 +73,12 @@ Process multiple recordings automatically.
 - FFmpeg (included)  
 - 7‑Zip (for extraction)
 
----
-
 ## Credits
 
 - Genymobile — scrcpy  
 - Fabrice Bellard — FFmpeg  
 - Microsoft — Windows  
 - Igor Pavlov — 7‑Zip  
-
----
 
 ## License
 
