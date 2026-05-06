@@ -1,9 +1,6 @@
 @echo off
 title Android AV Capture
 
-echo Removing old capture file...
-del output.mp4 2>nul
-
 echo Starting scrcpy recording to scrcpy-pipe.mkv...
 start "" scrcpy --no-window --record scrcpy-pipe.mkv --record-format=mkv
 
