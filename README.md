@@ -1,7 +1,7 @@
 # SLTPIF — Scrcpy Layer That Pipes Into File
 
 SLTPIF is a lightweight automation layer that makes recording Android screens with scrcpy effortless.  
-It handles recording, file finalization, FFmpeg remuxing, and automatic file management — all with a single click.
+It handles recording, file finalization, FFmpeg remuxing, and automatic file management — all with a single click.  
 Pronounciation of scrcpy: **scr**een **c**o**py**  
 
 SLTPIF is designed for zero‑friction screen recording on Windows.
