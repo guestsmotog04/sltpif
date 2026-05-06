@@ -75,10 +75,10 @@ Process multiple recordings automatically.
 
 ## Credits
 
-- Genymobile — scrcpy  
+- [Genymobile](https://www.github.com/Genymobile) — scrcpy  
 - Fabrice Bellard — FFmpeg  
-- Microsoft — Windows  
-- Igor Pavlov — 7‑Zip  
+- [Microsoft](https://www.github.com/Microsoft) — Windows (the official Microsoft page: [https://www.microsoft.com](https://www.microsoft.com))  
+- Igor Pavlov — [7‑Zip](https://www.7-zip.org)  
 
 ## License
 
