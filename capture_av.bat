@@ -1,24 +1,43 @@
 @echo off
-title Android AV Capture
+title SLTPIF - Audio/Video Capture (v1.01)
 
-echo Starting scrcpy recording to scrcpy-pipe.mkv...
-start "" scrcpy --no-window --record scrcpy-pipe.mkv --record-format=mkv
+echo ============================================
+echo      		SLTPIF v1.01
+echo ============================================
+echo.
+echo Changelog here: https://www.github.com/guestsmotog04/sltpif/blob/main/changelog.txt
+echo.
 
-echo Waiting for scrcpy to finish...
+if not exist "%~dp0\..\finished videos" mkdir "%~dp0\..\finished videos"
 
-:wait_scrcpy
-tasklist | find /i "scrcpy.exe" >nul
-if %errorlevel%==0 (
-    timeout /t 1 >nul
-    goto wait_scrcpy
-)
+echo Launching scrcpy...
+echo Close scrcpy when you want to stop recording.
+echo.
 
-echo scrcpy has exited. Starting FFmpeg remux...
-ffmpeg -i scrcpy-pipe.mkv -c:v copy -c:a aac output.mp4
-move .\output.mp4 ..\finished_videos
+"%~dp0\scrcpy.exe" --record temp.mkv
 
-echo Deleting old capture file from scrcpy...
-del scrcpy-pipe.mkv 2>nul
+echo.
+echo scrcpy closed. Finalizing...
+echo.
 
-echo Done!
+timeout /t 1 >nul
+
+for /f "tokens=1-3 delims=/: " %%a in ("%date%") do set d=%%a-%%b-%%c
+for /f "tokens=1-3 delims=: " %%a in ("%time%") do set t=%%a-%%b-%%c
+
+set fallback=SLTPIF_%d%_%t%.mp4
+
+echo Remuxing MKV -> MP4...
+"%~dp0\ffmpeg.exe" -y -i temp.mkv -c copy "%fallback%" >nul 2>&1
+
+move "%fallback%" "%~dp0\finished videos\" >nul
+del temp.mkv >nul 2>&1
+
+echo.
+echo ============================================
+echo        Recording Complete!
+echo Saved to: finished videos\
+echo ============================================
+echo.
 pause
+exit /b
