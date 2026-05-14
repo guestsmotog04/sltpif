@@ -19,7 +19,7 @@ SLTPIF is intentionally lightweight and beginner‑friendly.
 
 ## Installation
 
-1. Go to the Releases page  
+1. Go to the [Releases](https://www.github.com/guestsmotog04/sltpif/releases) page  
 2. Download the latest `SLTPIF.7z`  
 3. Extract it using 7‑Zip  
 4. Run `SLTPIF.bat` (or just `SLTPIF` if extensions are hidden)
